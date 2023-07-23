@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <title>Download unload</title>
+</head>
+
+<body>
+<h4> Download </h4>
+<p>Example "url" :</p>
+<p>https://www.youtube.com/watch?v=yxyxyxyxyxyxyxy</p>
+
+
+<form enctype=" " action=" " method="post">
+    {% csrf_token %}
+    <!---          <p>#:<input type= "file"  name="picture" /></p> ---->
+    <!-- style="display:none"    -->
+    <p><input type="url" name="description" placeholder="url" method="post"></p>
+
+    <p><input type="submit" value="Unload" onClick="location.href= {% url 'ytu_dowl' %}" ytu_dowl method="post"></p>
+    <!--- <input type="button" value="xinki.ru " onClick='location.href="http://xinki.ru/"'>--->
+</form>
+<span class="text-primary">
+    {% if description != "" %}
+  <p> {{ description }} </p>
+    <!--    <p> {{any}} </p>-->
+     <div>
+      <!--- <li >downloud -- <a href="./y_files/Python Hub Studio/Python requests http, https запросы, requests методы get и post, подключаемся к api через python.webm" download="download">download</a></li>
+       <li >Lincs downloud -- <a href="./y_files/Python Hub Studio/Python requests http, https запросы, requests методы get и post, подключаемся к api через python.webm" download="download">download</a></li>--->
+      {% for aname in any %}
+           <li>{{aname}} -- <a href="./y_files/{{vdeo_id}}/{{aname}}" download="download">download</a></li>
+        {% empty %}
+         <li>Sorry, no files.</li>
+         {% endfor %}
+     </div>
+    {% endif %}
+
+</span>
+
+<!---
+                <div><li >Lincs downloud -- <a  href="/downconvert/files/input1.mp4" download="download" style="display:none">download</a></li></div>
+
+                <div>Hello</div>
+            --->
+<!--{% for pic in pictures %}
+<div>
+    <img src="{{pic.image.url}}" alt="roor">
+    <p>{{pic.description }}</p>
+</div>
+{% endfor %} -->
+</body>
+</html>

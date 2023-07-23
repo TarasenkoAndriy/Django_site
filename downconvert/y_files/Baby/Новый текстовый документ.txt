@@ -1,0 +1,40 @@
+@echo off 
+:loop 
+E:\dowl_youtub\downconvert\y_files\yt-dlp.exe -f mp4 E:\dowl_youtub\downconvert\y_files\video https://www.youtube.com/watch?v=6W9P4AnlwHI 
+set /p input="URL: " 
+_______________________________________
+Fuul_Video
+******
+@echo off
+:loop
+set /p input="URL: "
+yt-dlp.exe %input% -P "E:\DownloadYotube\Yotube_Download"
+goto loop
+________________________________________
+
+
+
+@echo off 
+:loop 
+E:\dowl_youtub\downconvert\y_files\yt-dlp.exe -f mp4 E:\dowl_youtub\downconvert\y_filesideo https://www.youtube.com/watch?v=z7Xd1C2i6S0 
+set /p input="URL: " 
+
+@echo off 
+:loop 
+E:\dowl_youtub\downconvert\y_files\yt-dlp.exe -f mp4  https://www.youtube.com/watch?v=1BvzGD7rjWY&t=0s E:\dowl_youtub\downconvert\y_files\odeo 
+set /p input="URL: " 
+
+@echo off 
+:loop 
+E:\dowl_youtub\downconvert\y_files\yt-dlp.exe -f mp4 https://www.youtube.com/watch?v=cxZfHD4DJtI E:\dowl_youtub\downconvert\y_files\odeo 
+set /p input="URL: " 
+______________________________________________________________
+@echo off 
+:loop 
+set /p input="URL:https://www.youtube.com/watch?v=59rLWE0fMJo" 
+E:\dowl_youtub\downconvert\y_files\yt-dlp.exe -f mp4 "E:\dowl_youtub\downconvert\y_files\odeo
+
+@echo off 
+:loop 
+set /p input="URL:https://www.youtube.com/watch?v=59rLWE0fMJo" 
+E:\dowl_youtub\downconvert\y_files\yt-dlp.exe -f mp4 %input%  "E:\dowl_youtub\downconvert\y_files\odeo"
