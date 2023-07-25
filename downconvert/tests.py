@@ -1,3 +1,4 @@
-from django.test import TestCase
-
-# Create your tests here.
+import datetime
+gf = "  "
+current_datetime=datetime.datetime.now()
+print("current date and time:",current_datetime)
